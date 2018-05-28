@@ -1,0 +1,269 @@
+@import url(http://fonts.googleapis.com/css?family=Nunito:400,300,700);
+@import url(http://fonts.googleapis.com/css?family=Merriweather:400,300,400italic,300italic,700,700italic);
+@import url('https://fonts.googleapis.com/css?family=Ultra');
+
+/* ==========================================================================
+GRID
+========================================================================== */
+
+@media only screen and (min-width: 600px) {
+	/* For tablets: */
+	.col-m-1 {width: 8.33%;}
+	.col-m-2 {width: 16.66%;}
+	.col-m-3 {width: 25%;}
+	.col-m-4 {width: 33.33%;}
+	.col-m-5 {width: 41.66%;}
+	.col-m-6 {width: 50%;}
+	.col-m-7 {width: 58.33%;}
+	.col-m-8 {width: 66.66%;}
+	.col-m-9 {width: 75%;}
+	.col-m-10 {width: 83.33%;}
+	.col-m-11 {width: 91.66%;}
+	.col-m-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+	/* For desktop: */
+	.col-1 {width: 8.33%;}
+	.col-2 {width: 16.66%;}
+	.col-3 {width: 25%;}
+	.col-4 {width: 33.33%;}
+	.col-5 {width: 41.66%;}
+	.col-6 {width: 50%;}
+	.col-7 {width: 58.33%;}
+	.col-8 {width: 66.66%;}
+	.col-9 {width: 75%;}
+	.col-10 {width: 83.33%;}
+	.col-11 {width: 91.66%;}
+	.col-12 {width: 100%;}
+}
+
+/* ==========================================================================
+TOP Header
+========================================================================== */
+a {
+    text-decoration: none;
+}
+
+.c{
+	clear: both;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+
+.banner {
+	background-image: url("../img/Spherical-polygon-HD-wallpaper-1920x1080.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.container {
+	width: 100%;
+	margin: auto;
+}
+
+.menu-line .container {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.menu-line {
+	background-color: rgba(35,39,49,0);
+	padding: 0 15%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+	z-index: 9999;
+}
+
+.menu {
+	float: right;
+	list-style:none;
+}
+
+.logo {
+    float: left;
+}
+
+.logo img {
+    width: 100px;
+    height: 66.67px;
+}
+
+.menu li a {
+    color:#3d78af;
+}
+
+.menu li a:hover, footer a:hover {
+    color: #E5473A;
+}
+
+.menu li {
+	float: left;
+	margin-left: 10px;
+    padding: 5px;
+	font-size: 17px;
+	font-family: 'Helvetica Neue', monospace;
+	border: 1px solid white;
+}
+
+.header {
+    position: relative;
+    top: 100px;
+    padding: 25px 40px;
+    font-family: 'Open Sans';
+    text-align: center;
+	min-height: 500px;
+	color: white;
+}
+
+.header h1{
+	font-size: 76px;
+	font-family: 'Nunito', 'Open Sans';
+}
+
+.header h2 {
+    margin-top: -20px;
+	font-size: 24px;
+    font-family: 'Merriweather', 'Open Sans';
+    margin-bottom: 10px;
+}
+
+.actions {
+    text-align: center;
+    z-index: 999;
+}
+
+.actions a {
+  display: inline-block;
+  font-size: 18px;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  border: 1px solid #E5473A;
+  font-family: 'Merriweather', 'Open Sans';
+}
+
+.actions a:hover,
+.actions a:focus,
+.actions a:active {
+  background: #CD4033;
+}
+
+.worldwide {
+    background: #E5473A;
+}
+
+.empty {
+	height: 40px;
+	box-shadow: 0px 4px 8px #777;
+}
+
+#trending {
+	height: auto;
+	width: 80%;
+	margin: auto;
+}
+
+#trending h1 {
+	color: #343434;
+	font-weight: normal;
+	font-family: 'Ultra', sans-serif;
+	font-size: 28px;
+	line-height: 42px;
+	text-transform: uppercase;
+	text-align: center;
+	text-shadow: 0 1px white, 0 3px #777;
+}
+.row img {
+	margin: auto;
+	width: 500px;
+}
+
+.twitter-tweet {
+    box-shadow: 1px 1px 1px #ddd;
+    border-radius: 7px;
+}
+
+.twitter-tweet:hover {
+    box-shadow: 1px 2px 7px #888;
+}
+
+.column div p {
+	text-align: center;
+	border: 1px solid;
+    margin-bottom: -10px;
+    padding: 5px 10px;
+    border-radius: 0 5px 5px;
+}
+
+.column div a {
+	color: #1084ce;
+}
+
+.column div a:hover {
+	color: #1084ce;
+}
+
+.column div a:visited {
+	color: #e5473a;
+}
+
+.row .small {
+	width: 300px;
+}
+
+.active {
+	border: 1px solid #E5473A !important;
+}
+
+iframe {
+	height: 600px;
+	width: 100%;
+}
+
+footer a {
+	color: white;
+}
+
+footer div {
+	text-align: center;
+}
+
+footer {
+	background: #132536;
+	padding: 40px 30px;
+	color: white;
+	font-family: courier;
+}
+
+footer > p {
+	align: left;
+	font-size: smaller;
+}
+
+footer hr {
+	height: 0.012px;
+	width: 40%;
+	margin: auto;
+}
+
+@media only screen and (max-width: 720px){
+    .menu-line {
+        padding: 15px;
+    }
+}
+
+@media only screen and (max-width: 600px){
+	hr {
+		width: 90%;
+	}
+	.left, .right {
+		width: 100%;
+	}
+}

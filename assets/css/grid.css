@@ -1,0 +1,39 @@
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+}
+
+/* Create equal columns that sits next to each other */
+.column {
+    -ms-flex: 23%; /* IE10 */
+    flex: 23%;
+    max-width: 23%;
+    padding: 0 7px;
+}
+
+.column blockquote {
+    width: 100%;
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+/* Responsive layout - makes a two column-layout instead of three columns */
+@media screen and (max-width: 1290px) {
+    .column {
+        -ms-flex: 48%;
+        flex: 48%;
+        max-width: 48%;
+        padding: 0 5px;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 715px) {
+    .column {
+        -ms-flex: 99%;
+        flex: 99%;
+        max-width: 99%;
+    }
+}
