@@ -3,41 +3,6 @@
 @import url('https://fonts.googleapis.com/css?family=Ultra');
 
 /* ==========================================================================
-GRID
-========================================================================== */
-
-@media only screen and (min-width: 600px) {
-	/* For tablets: */
-	.col-m-1 {width: 8.33%;}
-	.col-m-2 {width: 16.66%;}
-	.col-m-3 {width: 25%;}
-	.col-m-4 {width: 33.33%;}
-	.col-m-5 {width: 41.66%;}
-	.col-m-6 {width: 50%;}
-	.col-m-7 {width: 58.33%;}
-	.col-m-8 {width: 66.66%;}
-	.col-m-9 {width: 75%;}
-	.col-m-10 {width: 83.33%;}
-	.col-m-11 {width: 91.66%;}
-	.col-m-12 {width: 100%;}
-}
-@media only screen and (min-width: 768px) {
-	/* For desktop: */
-	.col-1 {width: 8.33%;}
-	.col-2 {width: 16.66%;}
-	.col-3 {width: 25%;}
-	.col-4 {width: 33.33%;}
-	.col-5 {width: 41.66%;}
-	.col-6 {width: 50%;}
-	.col-7 {width: 58.33%;}
-	.col-8 {width: 66.66%;}
-	.col-9 {width: 75%;}
-	.col-10 {width: 83.33%;}
-	.col-11 {width: 91.66%;}
-	.col-12 {width: 100%;}
-}
-
-/* ==========================================================================
 TOP Header
 ========================================================================== */
 a {
@@ -52,7 +17,6 @@ body {
     padding: 0;
     margin: 0;
 }
-
 
 .banner {
 	background-image: url("../img/Spherical-polygon-HD-wallpaper-1920x1080.jpg");
@@ -133,8 +97,9 @@ body {
 }
 
 .actions {
+	position: relative;
+	top: 100px;
     text-align: center;
-    z-index: 999;
 }
 
 .actions a {
@@ -152,7 +117,7 @@ body {
 .actions a:hover,
 .actions a:focus,
 .actions a:active {
-  background: #CD4033;
+  background: #F24B3D;
 }
 
 .worldwide {
@@ -222,7 +187,29 @@ body {
 	border: 1px solid #E5473A !important;
 }
 
-iframe {
+.top-scroll {
+	color: #eeeeee;
+    background-color: #333333;
+    opacity: 0.6;
+    position: fixed;
+    border-radius: 2px;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    text-decoration: none;
+    text-align: center;
+    right: 50px;
+    bottom: 50px;
+    z-index: 1030;
+    display: none;
+}
+
+.top-scroll:hover {
+	opacity: 0.7;
+	background: #F24B3D;
+}
+
+#map {
 	height: 600px;
 	width: 100%;
 }
@@ -263,7 +250,103 @@ footer hr {
 	hr {
 		width: 90%;
 	}
-	.left, .right {
-		width: 100%;
-	}
+}
+
+/* The switch - the box around the slider */
+.switch {
+	margin-top: 7px;
+	float; right;
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {display:none;}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }

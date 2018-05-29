@@ -1,4 +1,5 @@
 <?php
+
 require_once('twitterInit.php');
 require_once('simple_html_dom.php');
 
@@ -11,12 +12,11 @@ $url = $link->attr['href'];
 // api request e
 $source = "https://publish.twitter.com/oembed";
 $field = '?url=https://twitter.com'.$url;
-$filters = '&omit_script=true&hide_media=true';
+$filters = '&omit_script=true&hide_media='.$_POST["media"];
 
 // init request
 $tweet =  $twitter->setGetfield($field.$filters)
 ->buildOauth($source, $requestMethod)
 ->performRequest();
-
 echo $tweet;
 ?>
