@@ -1,3 +1,15 @@
+<!-- The Modal -->
+<div id="confirm" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+  	<span class="close">&times;</span>
+  	<p>This page page contain sensitive media. Do you want to allow?</p>
+  	<label class="switch" title="Allow media">
+		<input type="checkbox" id="media">
+		<span class="slider round"></span>
+	</label>
+  </div>
+</div>
 <div>
 	<a href="#top" title="Scroll to top" class="top-scroll">&uarr;</a>
 </div>

@@ -5,6 +5,7 @@ require_once('simple_html_dom.php');
 
 // f=tweets: latest tweets
 $html = file_get_html($_POST['url']); //get the search page
+
 // get link of latest tweet from each keyword
 $link = $html->find('a.tweet-timestamp', 0);
 $url = $link->attr['href'];
